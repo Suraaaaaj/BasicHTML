@@ -5,7 +5,7 @@ function onload(){
     }    
 }
 
-function filterBlogs(value){
+function filterBlogsByCategory(value){
     console.log("hi")
     if(value==1){
         document.getElementById('category1').style.display = "block";
