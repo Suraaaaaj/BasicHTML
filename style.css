@@ -168,6 +168,14 @@ width: 100%;
     .col-2 {width: 70%;}
 }
 
+#readmore{
+    display: none;
+}
+#readmore:target{
+    display: block;
+}
+
+
 /* Main section ends */
 
 
