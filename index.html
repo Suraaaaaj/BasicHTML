@@ -44,9 +44,9 @@
             <div class="news-head">
                 <div class="news-head-title">SUBSCRIBE</div>
                 <div class="subscribe-container">
-                    <form>
-                        <input type="email" class="email-feild" placeholder="Email Address" pattern=".+@gmail\.com" required>
-                        <button type="submit" class="subscribe-btn" style="margin-left: -5px;">Subscribe</button>
+                    <form name="form">
+                        <input type="email" name ="email" class="email-feild" placeholder="Email Address"  required>
+                        <button type="submit" onclick="subscribe(document.form.email)" class="subscribe-btn" style="margin-left: -5px;">Subscribe</button>
                     </form>
                 </div>
             </div>
