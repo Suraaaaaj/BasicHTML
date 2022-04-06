@@ -13,6 +13,7 @@
     <script src="./scipt.js"></script>
 </head>
 
+
 <body onload="onload()">
     <header>
         <div class="header-main-section">
@@ -22,7 +23,20 @@
             </div>
         </div>
     </header>
+    
 
+    <dialog id="dialog1">
+        <button onclick="window.dialog1.close();">X</button>
+        <img height="400px" width="400px" src="./3jpg.jpg">
+    </dialog>
+    <dialog id="dialog2">
+        <button onclick="window.dialog2.close();">X</button>
+        <img height="400px" width="400px" src="./2jpg.jpg">
+    </dialog>
+    <dialog id="dialog3">
+        <button onclick="window.dialog3.close();">X</button>
+        <img height="400px" width="400px" src="./1.jpg">
+    </dialog>
     <div class="view">
         <div class="main-section">
             <div class="news-head">
@@ -45,20 +59,21 @@
                 <div class="news-head-title">SUBSCRIBE</div>
                 <div class="subscribe-container">
                     <form name="form">
-                        <input type="email" name ="email" class="email-feild" placeholder="Email Address"  required>
-                        <button type="submit" onclick="subscribe(document.form.email)" class="subscribe-btn" style="margin-left: -5px;">Subscribe</button>
+                        <input type="email" name="email" class="email-feild" placeholder="Email Address" required>
+                        <button type="submit" onclick="subscribe(document.form.email)" class="subscribe-btn"
+                            style="margin-left: -5px;">Subscribe</button>
                     </form>
                 </div>
             </div>
-    
+
         </div>
         <hr class="hr-main">
-    
+
         <div class="row" id="category1" style="margin-left: 30px;margin-right: 30px;">
             <div class="col-1 col-s-1 menu">
-                <img src="./blogimage.PNG">
+                <img onclick="window.dialog1.show();" src="./3jpg.jpg">
             </div>
-    
+
             <div class="col-2 col-s-2">
                 <div class="blog-data">
                     <div class="blog-title">
@@ -75,42 +90,53 @@
                         when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                         <span id="readmore1">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries.
                             when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. 
+                            of type and scrambled it to make a type specimen book.
                             <p>It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
                             </p>
                         </span>
 
                     </div>
                     <div>
-                        <button class="continue-btn" >
+                        <button class="continue-btn">
                             <span id="cnt-btn1" onclick="showMore(1)">Continue Reading</span>
                             <span id="hide-btn1" onclick="hideMore(1)">Hide Details</span>
                         </button>
                     </div>
                 </div>
             </div>
-    
+
         </div>
-        <hr class="hr-blog" id = "hr1">
-        <div class="row" id="category2"  style="margin-left: 30px;margin-right: 30px;">
+        <hr class="hr-blog" id="hr1">
+        <div class="row" id="category2" style="margin-left: 30px;margin-right: 30px;">
             <div class="col-1 col-s-1 menu">
-                <img src="./blogimage.PNG">
+                <img onclick="window.dialog2.show();" src="./2jpg.jpg">
             </div>
-    
+
             <div class="col-2 col-s-2">
                 <div class="blog-data">
                     <div class="blog-title">
@@ -127,22 +153,33 @@
                         when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                         <span id="readmore2">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries.
                             when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. 
+                            of type and scrambled it to make a type specimen book.
                             <p>It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
                             </p>
                         </span>
                     </div>
@@ -154,14 +191,14 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
-        <hr class="hr-blog" id="hr2" >
-        <div class="row" id="category3"  style="margin-left: 30px;margin-right: 30px;">
+        <hr class="hr-blog" id="hr2">
+        <div class="row" id="category3" style="margin-left: 30px;margin-right: 30px;">
             <div class="col-1 col-s-1 menu">
-                <img src="./blogimage.PNG">
+                <img onclick="window.dialog3.show();" src="./1.jpg">
             </div>
-    
+
             <div class="col-2 col-s-2">
                 <div class="blog-data">
                     <div class="blog-title">
@@ -178,22 +215,33 @@
                         when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                         <span id="readmore3">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries.
                             when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. 
+                            of type and scrambled it to make a type specimen book.
                             <p>It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                            when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
+                                when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries.
                             </p>
                         </span>
                     </div>
@@ -205,10 +253,10 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </div>
-    
+
     <footer class="footer-style">
         <div>@NewsFeed 2019</div>
     </footer>
