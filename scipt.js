@@ -4,6 +4,10 @@ function onload(){
         document.getElementById('readmore'+i).style.display = "none";
     }    
 }
+
+
+
+
 function subscribe(input){
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
